@@ -123,11 +123,12 @@ ticket system and use your feedback to improve the documentation for everybody.
 
 Note, however, that tickets should explicitly relate to the documentation,
 rather than asking broad tech-support questions. If you need help with your
-particular Django setup, try the |django-users| mailing list or the `#django
-IRC channel`_ instead.
+particular Django setup, try the `Django Forum`_ or the
+`Django Discord server`_ instead.
 
 .. _ticket system: https://code.djangoproject.com/
-.. _#django IRC channel: https://web.libera.chat/#django
+.. _Django Forum: https://forum.djangoproject.com/
+.. _Django Discord server: https://chat.djangoproject.com
 
 In plain text
 -------------
@@ -211,9 +212,9 @@ We follow this policy:
   been released yet, or "New in version X.Y" for released versions.
 
 * Documentation fixes and improvements may be backported to the last release
-  branch, at the discretion of the committer, however, once a version of
-  Django is :ref:`no longer supported<supported-versions-policy>`, that version
-  of the docs won't get any further updates.
+  branch, at the discretion of the merger, however, once a version of Django is
+  :ref:`no longer supported<supported-versions-policy>`, that version of the
+  docs won't get any further updates.
 
 * The `main documentation web page`_ includes links to documentation for
   previous versions. Be sure you are using the version of the docs

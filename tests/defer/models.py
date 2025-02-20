@@ -19,6 +19,14 @@ class Primary(models.Model):
         return self.name
 
 
+class PrimaryOneToOne(models.Model):
+    name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50)
+    related = models.OneToOneField(
+        Secondary, models.CASCADE, related_name="primary_o2o"
+    )
+
+
 class Child(Primary):
     pass
 
@@ -52,8 +60,9 @@ class ShadowParent(models.Model):
     overridden, the field value, rather than the scalar value must still be
     used when the field is deferred.
     """
-    name = 'aphrodite'
+
+    name = "aphrodite"
 
 
 class ShadowChild(ShadowParent):
-    name = models.CharField(default='adonis', max_length=6)
+    name = models.CharField(default="adonis", max_length=6)
